@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: black;
+    }
+
+    p{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .div-bottones-inicio{
+        background-color: rgba(0, 0, 0, 0.375);
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottones-inicio{
+        height: 130px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bottones-inicio button{
+        height: 45px;
+        width: 50%;
+        border: none;
+        border-radius: 10px;
+        background-color: rgb(13, 197, 13);
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottones-inicio a{
+        padding: 15px;
+        text-decoration: none;
+        text-decoration-line: none;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+    }
+</style>
+<script>
+    let contraseña = "";
+  function validar(){
+    contraseña = prompt('Ingrese su contraseña')
+    if(contraseña === 1234){
+           alert('Bienvenido Administrador')
+           }else{
+            alert('Usuario no autoriizado')
+           }
+  }
+  document.getElementById('administrador').addEventListener('click') = validar();
+</script>
+<body>
+    <p>Bienvenido a Paga tus inpuestos ingrese su rol para continuar</p>
+    <div class="div-bottones-inicio"> 
+    <div class="bottones-inicio">
+    <button type="button"><a href="Usuario/index.html">Quiero pagar mis inpuestos</a></button>
+    <button type="button"><a id="administrador" href="Administrador/index.html">Soy administrador</a></button>
+    </div>
+</div>
+</body>
+</html>
